@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return submitForm()">
+            <input id="n1"  type="text" name="num1" placeholder="Enter the value1">
+            <input data-n2="n2" type="text" name="num2" placeholder="Enter the value">
+            <input data-n2="n3" type="text" name="num3" placeholder="Enter the value">
+            <input type="submit" value="submit">
+            </form>
+            <hr>
+            <from>
+                <input type="text" placeholder="Enter the value">
+                <button type="submit">submit</button>
+
+            </from>
+            <script>
+                //Always load js at the bottom to apear your website is loading faster
+
+                //1. function defination
+                function submitFrom(e){//formal parameter
+                //function body
+                //
+                let number1 = document.getElementByID('n1'),value;
+                var number2 = document.querySelector('[data-n2="n2]'),value;
+                alert('ok' + number1);
+                alert('ok' + number2);
+
+                let result = parseInt(number1) + parseInt(number2);
+                alert(result);
+                //now save this result in lacal storage so that we access later
+                //object method();
+                lacalStorage.setItem('result',result);
+                //A function may return something
+                return false;
+                }
+
+            </script>
+</body>
+</html>
